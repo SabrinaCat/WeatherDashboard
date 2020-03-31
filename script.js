@@ -10,19 +10,10 @@ $.ajax({
 
 console.log(data);
 });
-$.ajax({
-    url: "https://api.windy.com/api/webcams/v2/[path]?key=eMD8jddw0zG16xeTQeGWTryCpN6pf6R5",
-    method: 'GET',
-}
-).then(function(data){
-    console.log(data);
-});
 
 
 
 
-/*(
-"api.openweathermap.org/data/2.5/forecast?q=austin&appid=9d121c02df77b3ca923b909162b1efe7",
-function (data) {
-console.log(data);*/
+
+
         

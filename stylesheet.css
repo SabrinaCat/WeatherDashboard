@@ -9,6 +9,7 @@ main {
     justify-content: space-around;
 }
 aside {
+    max-height: fit-content;
     max-width: 30%;
     display: flex;
     flex-direction: column;
@@ -18,7 +19,7 @@ aside {
     border-color: cadetblue;
 }
 
-section {
+#currentCity {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
@@ -27,14 +28,13 @@ section {
     max-width: 40%;
 }
 
-ul{
-text-align: center;
-}
 
-.forecast {
+#fiveDay {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    border-style: solid;
+    border-color: cadetblue;
 
 }
