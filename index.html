@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+
+<body>
+    <!--Header of our page "Weather Dashboard-->
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1"><strong>Weather Dashboard</strong></span>
+    </nav>
+
+    <!--Div for search bar and popular searches-->
+    <main>
+        <!--Search bar- Input will be used for api URL search-->
+        <aside>
+            <form class="form-inline">
+                <input id ="cityInput" class="form-control mr-sm-2" type="search" placeholder="City Name" aria-label="Search">
+                <button id="searchBtn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            
+            <!--Popular city options-->
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </aside>
+
+            <!--Div for current city-->
+            <section id="currentCity">
+                <!--Header that will update after search criteria is entered-->
+                <h1 id="search">Sample city, date and icon <img src="" alt="Icon of current weather"></h1>
+                <ul>Five Day Forecast
+                    <li class="forecast">Day 1</li>
+                    <li class="forecast">Day2</li>
+                    <li class="forecast">Day 3</li>
+                    <li class="forecast">Day 4</li>
+                    <li class="forecast">Day 5</li>
+                </ul>
+            </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
